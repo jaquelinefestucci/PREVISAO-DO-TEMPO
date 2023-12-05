@@ -1,0 +1,212 @@
+* {
+    font-family: 'Arimo', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    background-image: url('./assets/ceu.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    color: aliceblue;
+    margin-bottom: 15px;
+}
+
+.container {
+    background: rgb(2, 0, 36);
+    background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 52%, rgba(0, 212, 255, 1) 100%);
+    color: wheat;
+    width: 530px;
+    border-radius: 10px;
+    font-weight: normal;
+
+}
+
+#dataHoraAtual {
+    padding: 10px 0 0 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.input-pesquisa {
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+input {
+    width: 300px;
+    border-color: rgb(120, 122, 124);
+    outline: none;
+    border-radius: 5px;
+    color: black;
+    padding-left: 10px;
+    height: 40px;
+    font-size: 20px;
+}
+
+input::placeholder {
+    font-size: 15px;
+}
+
+.retono_lupacidade {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    width: 40px;
+}
+
+.lupa {
+    width: 20px;
+
+
+}
+
+.img-ceu {
+    width: 100px;
+}
+
+.temperaturas {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.temperatura {
+    font-size: 60px;
+
+}
+
+.img-pesquisa {
+    width: 25px;
+}
+
+.min_max {
+    display: block;
+    margin-top: 18px;
+    font-size: 13px;
+}
+
+.temp-max {
+    color: red;
+    font-size: 20px;
+}
+
+.temp-min {
+    color: rgb(188, 188, 235);
+    font-size: 20px;
+}
+
+.sensacao {
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.rodape {
+    padding: 20px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.descricao::first-letter {
+    text-transform: uppercase;
+
+}
+
+@media screen and (max-width: 600px) and (orientation: portrait) {
+    body {
+        background: rgb(2, 0, 36);
+        background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 52%, rgba(0, 212, 255, 1) 100%);
+        display: block;
+    }
+
+    header {
+        font-size: 30px;
+        margin-top: 80px;
+        margin-bottom: 40px;
+    }
+
+    .container {
+        background: rgb(2, 0, 36);
+        width: 330px;
+        margin: 0 auto;
+    }
+
+    #dataHoraAtual {
+        padding: 10% 0 0 20%;
+        display: flex;
+        justify-content: center;
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+
+    input {
+        width: 250px;
+        font-size: 20px;
+    }
+
+    input::placeholder {
+        font-size: 15px;
+    }
+
+    .retono_lupacidade {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .temperatura {
+        font-size: 40px;
+
+    }
+    .min_max {
+        font-size: 5px;
+    }
+
+    .descricao::first-letter {
+        text-transform: uppercase;
+
+    }
+
+    .rodape {
+        padding: 20px;
+        display: block;
+        gap: 30px;
+    }
+
+    .umidade,
+    .vento,
+    .descricao {
+        margin: 30px auto;
+    }
+
+}
+

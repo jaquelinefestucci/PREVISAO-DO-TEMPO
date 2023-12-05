@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:wght@300&family=Arimo&family=Bricolage+Grotesque&family=Lato:wght@300;400;700&family=Montserrat:wght@400;500;600;700;900&family=Oswald&family=Pacifico&family=Poppins:wght@400;500;700&family=Roboto:wght@100;400&family=Space+Grotesk:wght@500&display=swap"
+        rel="stylesheet">
+
+    <title>  Projeto 🔍 Previsão do Tempo</title>
+</head>
+
+<body>
+    <div>
+        <header> Previsão do Tempo</header>
+        <div class="container">
+            <p id="dataHoraAtual">Tempo Atual</p>
+            <div class="input-pesquisa">
+                <input class="input-cidade" type="text" placeholder="Digite aqui o nome da cidade">
+                <button onclick="pesquisar()">
+                    <img class="lupa" alt="imagem-lupa" src="https://www.svgrepo.com/show/488200/find.svg" />
+                </button>
+            </div>
+            <main>
+
+                <p class="retono_lupacidade"> </p>
+                <div class="temperaturas">
+                    <img src="https://guiabarueri.site/wp-content/uploads/2017/07/Previsao-do-Tempo.jpg" alt="imagem-tempo" class="img-ceu" />
+                    <p class="temperatura"> </p>
+                    <div class="min_max">
+                        <p class="temp-max"> </p>
+                        <p class="temp-min"></p>
+                    </div>
+                    
+                </div>
+                <p class="sensacao"> </p>
+                <div class="rodape">
+                    <p class="descricao"> </p>
+                    <p class="umidade"> </p>
+                   <p class="vento"></p>
+
+                </div>
+        </div>
+        </main>
+
+    </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
