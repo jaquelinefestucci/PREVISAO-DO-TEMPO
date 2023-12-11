@@ -3,13 +3,13 @@ function atualizarDataHora() {
    let data = dataHora.toLocaleDateString();
    let hora = dataHora.toLocaleTimeString();
 
-    document.getElementById ("dataHoraAtual").innerHTML = 'Clima atual ' + data + "📅  "+ hora + "  ⌚";
+    document.getElementById ("dataHoraAtual").innerHTML = `Clima atual  ${data}  📅  ${hora} ⌚`;
 }
 
  atualizarDataHora();
  setInterval(atualizarDataHora, 1000);
 
- let chave = "365d08bad9ea82295710e1fecdb145bf"
+ let chave = "365d08bad9ea82295710e1fecdb145bf";
 
  function colocarNaTela(dados) {
     console.log(dados)
